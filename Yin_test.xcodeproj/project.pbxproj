@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4253356716CCF681004BBE19 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4253356616CCF681004BBE19 /* main.cpp */; };
 		4253356916CCF681004BBE19 /* Yin_test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4253356816CCF681004BBE19 /* Yin_test.1 */; };
+		4253357116CCF6E4004BBE19 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4253357016CCF6E4004BBE19 /* main.cpp */; };
+		4253357316CCF6FA004BBE19 /* Yin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4253357216CCF6FA004BBE19 /* Yin.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +27,10 @@
 
 /* Begin PBXFileReference section */
 		4253356316CCF681004BBE19 /* Yin_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Yin_test; sourceTree = BUILT_PRODUCTS_DIR; };
-		4253356616CCF681004BBE19 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		4253356816CCF681004BBE19 /* Yin_test.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Yin_test.1; sourceTree = "<group>"; };
+		4253356F16CCF6C8004BBE19 /* Yin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yin.h; sourceTree = "<group>"; };
+		4253357016CCF6E4004BBE19 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4253357216CCF6FA004BBE19 /* Yin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Yin.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +63,9 @@
 		4253356516CCF681004BBE19 /* Yin_test */ = {
 			isa = PBXGroup;
 			children = (
-				4253356616CCF681004BBE19 /* main.cpp */,
+				4253357216CCF6FA004BBE19 /* Yin.cpp */,
+				4253357016CCF6E4004BBE19 /* main.cpp */,
+				4253356F16CCF6C8004BBE19 /* Yin.h */,
 				4253356816CCF681004BBE19 /* Yin_test.1 */,
 			);
 			path = Yin_test;
@@ -117,7 +122,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4253356716CCF681004BBE19 /* main.cpp in Sources */,
+				4253357116CCF6E4004BBE19 /* main.cpp in Sources */,
+				4253357316CCF6FA004BBE19 /* Yin.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

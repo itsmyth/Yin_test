@@ -1,18 +1,29 @@
-//
-//  main.cpp
-//  Yin_test
-//
-//  Created by Ivan Smyth on 14/02/2013.
-//  Copyright (c) 2013 Ivan Smyth. All rights reserved.
-//
-
 #include <iostream>
+#define PI 3.147
+#include <math.h>
+#include "Yin.h"
 
-int main(int argc, const char * argv[])
+using namespace std;
+
+int main()
 {
+    unsigned int i;
+    int sampleRate=200;
+    int bufferSize=96;
+    Yin yin;
+    float x, pitch, prob, buffer[96];
+    yin.initialize(sampleRate,bufferSize);
+    for(i=0;i<96;i++)
+    {
+        x=4*sin(0.1*PI*i);
+        buffer[i]=x;
+        cout<< x << endl;
+    }
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    pitch=yin.getPitch(buffer);
+    prob=yin.getProbability();
+    //prob=yin.getProbability();
+    cout<<"Your pitch is "<<pitch<<" Hz\n";
+    cout<<"Probability is "<<prob<<"\n";
     return 0;
 }
-
