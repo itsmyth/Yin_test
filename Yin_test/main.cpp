@@ -9,11 +9,11 @@ int main()
 {
     unsigned int i;
     int sampleRate=200;
-    int bufferSize=96;
+    int bufferSize=50;
     Yin yin;
     float x, pitch, prob, buffer[96];
     yin.initialize(sampleRate,bufferSize);
-    for(i=0;i<96;i++)
+    for(i=0;i<bufferSize;i++)
     {
         x=4*sin(0.1*PI*i);
         buffer[i]=x;

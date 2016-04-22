@@ -123,6 +123,7 @@ if (yinBuffer[tau] < threshold) {
 while (tau + 1 < halfBufferSize && yinBuffer[tau + 1] < yinBuffer[tau]) {
 tau++;
 }
+    
 // found tau, exit loop and return
 // store the probability
 // From the YIN paper: The threshold determines the list of
